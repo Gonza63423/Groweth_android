@@ -14,7 +14,7 @@
         android:adjustViewBounds="true"
         android:contentDescription="Ilustración de reciclaje"
         android:scaleType="centerCrop"
-        android:src="@drawable/sea_turtle_2"
+        android:src="@drawable/seaturtle2"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="-1dp" />
 
