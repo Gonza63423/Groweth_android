@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+    tools:context=".RetosActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retos Diarios"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Los Retos Diarios son pequeñas acciones que podés hacer cada día para ayudar al planeta y a los animales. Marcalos como completados cuando los realices, y sumá tu granito de arena para un mundo mejor🌱"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp" />
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Separé correctamente la basura hoy ♻️"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/descripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="1dp" />
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reutilicé un envase en lugar de tirarlo 🥤"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/check1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp" />
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No usé bolsas plásticas al hacer compras 🛍️"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/check2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompletado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="58dp"
+            android:text="Completado"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/holo_green_light"
+            app:cornerRadius="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="145dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
