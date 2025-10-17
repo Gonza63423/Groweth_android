@@ -8,17 +8,6 @@
     android:paddingTop="?attr/actionBarSize"
     android:background="@drawable/mati_fondo">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemIconTint="@null"
-        app:itemTextColor="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
 
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"
@@ -54,8 +43,7 @@
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:gravity="center"
-        android:text=" Cuida el planeta,
-                       protege a Los Animales"
+        android:text=" Cuida el planeta,protege a Los Animales"
         android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold"
