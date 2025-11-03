@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@drawable/mati_fondo">
+
+
+    <TextView
+        android:id="@+id/tvBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌍Medioambiente:️️♻️"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="330dp"
+        android:gravity="center"
+        android:text="El medioambiente es todo lo que nos rodea: el aire, el agua, el suelo, los árboles, los animales y las personas. Es el sistema natural del que dependemos para vivir y que debemos proteger para que el planeta siga siendo habitable.
+ Cuidar el medioambiente no es solo una responsabilidad de gobiernos o empresas: también depende de nuestras acciones diarias. Cuidarlo es  cuidar la vida. Si cada persona hace pequeñas acciones, los cambios se multiplican. El planeta es nuestro hogar común."
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+
+    <ImageView
+        android:id="@+id/imgReciclaje"
+        android:layout_width="325dp"
+        android:layout_height="274dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Ilustración de reciclaje"
+        android:scaleType="centerInside"
+        android:src="@drawable/medioambiente"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

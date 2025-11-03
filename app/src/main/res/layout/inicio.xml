@@ -8,23 +8,13 @@
     android:paddingTop="?attr/actionBarSize"
     android:background="@drawable/mati_fondo">
 
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/mati_fondo"
-        tools:context=".InicioActivity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="64dp">
-
         <!-- 🟢 Título principal -->
         <TextView
             android:id="@+id/tvBienvenida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Bienvenido/a"
+            android:text="♻️Bienvenido/a🌳"
             android:textColor="@color/black"
             android:textSize="40dp"
             android:textStyle="bold"
@@ -139,7 +129,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_nav_menu" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
